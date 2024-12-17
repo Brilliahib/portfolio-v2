@@ -8,12 +8,10 @@ export default function HomeContent() {
     <>
       <main className="w-full flex justify-center py-32 px-5 sm:px-0" id="home">
         <div className="w-full max-w-sm">
-          <div className="md:space-y-16 space-y-8">
-            <HomeJumbotron />
-            <HomeAbout />
-            <HomeExperience />
-            <HomeProject />
-          </div>
+          <HomeJumbotron />
+          <HomeAbout />
+          <HomeExperience />
+          <HomeProject />
         </div>
       </main>
     </>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { House, Briefcase, Code, MessageCircle } from "lucide-react";
+import { House, Code, User, BriefcaseBusiness } from "lucide-react";
 import { ThemeToggler } from "@/components/theme-toggler";
 import {
   Tooltip,
@@ -10,9 +10,9 @@ import { Button } from "@/components/ui/button";
 
 const nav = [
   { icon: <House />, name: "Home", href: "#home" },
-  { icon: <Briefcase />, name: "Experience", href: "#work" },
+  { icon: <User />, name: "About", href: "#about" },
+  { icon: <BriefcaseBusiness />, name: "Experience", href: "#experience" },
   { icon: <Code />, name: "Project", href: "#project" },
-  { icon: <MessageCircle />, name: "Chat!", href: "#chat" },
 ];
 
 export default function Navbar() {
