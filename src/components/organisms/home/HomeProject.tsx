@@ -28,9 +28,9 @@ export default function HomeProject() {
                   <div className="space-y-2">
                     <h1 className="text-base font-semibold">Codelingo</h1>
                     <p className="tracking-tight text-sm">
-                      CodeLingo adalah program pembelajaran coding yang
-                      dirancang khusus untuk anak-anak, mulai dari pemula hingga
-                      level intermediate.{" "}
+                      CodeLingo is a coding learning program designed
+                      specifically for children, from beginners to intermediate
+                      levels.
                     </p>
                   </div>
                 </div>
@@ -49,10 +49,9 @@ export default function HomeProject() {
                   <div className="space-y-2">
                     <h1 className="text-base font-semibold">Tumbuh Sahabat</h1>
                     <p className="tracking-tight text-sm">
-                      Tumbuh Sahabat adalah aplikasi berbasis web yang dirancang
-                      khusus untuk membantu anak-anak dengan Down syndrome dalam
-                      memantau asupan gizi mereka dan belajar melalui permainan
-                      edukatif.
+                      Tumbuh Sahabat is a web-based application designed to help
+                      children with Down syndrome monitor their nutritional
+                      intake and learn through educational games.
                     </p>
                   </div>
                 </div>
@@ -62,18 +61,18 @@ export default function HomeProject() {
               <CardContent className="p-4">
                 <div className="space-y-4">
                   <Image
-                    src="/images/codelingo.png"
+                    src="/images/charingcub.png"
                     width={1000}
                     height={1000}
                     alt="Project"
                     className="max-h-[250px] w-full object-cover rounded-md"
                   />
                   <div className="space-y-2">
-                    <h1 className="text-base font-semibold">Codelingo</h1>
+                    <h1 className="text-base font-semibold">Charingcub</h1>
                     <p className="tracking-tight text-sm">
-                      CodeLingo adalah program pembelajaran coding yang
-                      dirancang khusus untuk anak-anak, mulai dari pemula hingga
-                      level intermediate.{" "}
+                      Charingcub is a web application designed to help parents
+                      find daycare or childcare facilities that meet their
+                      needs.
                     </p>
                   </div>
                 </div>

@@ -1,4 +1,45 @@
+import Marquee from "@/components/ui/marquee";
+import Image from "next/image";
+
 export default function HomeAbout() {
+  const tech = [
+    {
+      name: "Typescript",
+      logo: "/images/typescript.png",
+    },
+    {
+      name: "Javascript",
+      logo: "/images/javascript.png",
+    },
+    {
+      name: "Firebase",
+      logo: "/images/firebase.png",
+    },
+    {
+      name: "React",
+      logo: "/images/react.png",
+    },
+    {
+      name: "Docker",
+      logo: "/images/docker.png",
+    },
+    {
+      name: "Google Cloud Platform",
+      logo: "/images/gcp.png",
+    },
+    {
+      name: "Postgresql",
+      logo: "/images/postgresql.png",
+    },
+    {
+      name: "PHP",
+      logo: "/images/php.png",
+    },
+    {
+      name: "Laravel",
+      logo: "/images/laravel.png",
+    },
+  ];
   return (
     <>
       <section id="about" className="pt-24">
@@ -18,6 +59,27 @@ export default function HomeAbout() {
             improve my coding skills, and strive to write clean, maintainable
             code.
           </p>
+        </div>
+        <div className="relative overflow-hidden mt-7">
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {tech.map((item, i) => (
+              <div
+                key={i}
+                className="max-w-none text-sm flex items-center gap-x-2 mx-2 cursor-default"
+              >
+                <Image
+                  src={item.logo || "/vercel.svg"}
+                  alt="logo"
+                  width={20}
+                  height={20}
+                  className="rounded"
+                />
+                {item.name}
+              </div>
+            ))}
+          </Marquee>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
         </div>
       </section>
     </>
