@@ -101,13 +101,18 @@ export default function CardProjectList() {
               </div>
               <div className="flex items-center gap-4">
                 <Badge>
-                  <Link href={project.link} className="flex items-center gap-2">
+                  <Link
+                    target="blank"
+                    href={project.link}
+                    className="flex items-center gap-2"
+                  >
                     <Globe className="h-4 w-4" />
                     Preview
                   </Link>
                 </Badge>
                 <Badge>
                   <Link
+                    target="blank"
                     href={project.github}
                     className="flex items-center gap-2"
                   >

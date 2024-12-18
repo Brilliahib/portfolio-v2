@@ -19,7 +19,7 @@ export default function HomeProject() {
               <CardContent className="p-4">
                 <div className="space-y-4">
                   <Image
-                    src="/images/codelingo.png"
+                    src="/images/projects/codelingo.png"
                     width={1000}
                     height={1000}
                     alt="Project"
@@ -40,7 +40,7 @@ export default function HomeProject() {
               <CardContent className="p-4">
                 <div className="space-y-4">
                   <Image
-                    src="/images/tumbuhsahabat.png"
+                    src="/images/projects/tumbuhsahabat.png"
                     width={1000}
                     height={1000}
                     alt="Project"
@@ -61,7 +61,7 @@ export default function HomeProject() {
               <CardContent className="p-4">
                 <div className="space-y-4">
                   <Image
-                    src="/images/charingcub.png"
+                    src="/images/projects/charingcub.png"
                     width={1000}
                     height={1000}
                     alt="Project"
