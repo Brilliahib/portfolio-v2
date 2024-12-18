@@ -1,5 +1,8 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Github, Globe } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -8,6 +11,9 @@ const projects = [
     description:
       "CodeLingo is a coding learning program designed specifically for children, from beginners to intermediate levels.",
     image: "/images/projects/codelingo.png",
+    link: "https://codelingo-dev.vercel.app",
+    github: "https://github.com/Brilliahib/codelingo",
+    tech: "",
   },
   {
     id: 2,
@@ -15,6 +21,8 @@ const projects = [
     description:
       "Tumbuh Sahabat is a web-based application designed to help children with Down syndrome monitor their nutritional intake and learn through educational games.",
     image: "/images/projects/tumbuhsahabat.png",
+    link: "https://tumbuhsahabat.vercel.app",
+    github: "https://github.com/Brilliahib/cms-sahabat-tumbuh",
   },
   {
     id: 3,
@@ -22,6 +30,8 @@ const projects = [
     description:
       "Charingcub is a web application designed to help parents find daycare or childcare facilities that meet their needs.",
     image: "/images/projects/charingcub.png",
+    link: "https://charingcub.com",
+    github: "https://github.com/Brilliahib/cms-charing-cub",
   },
 
   {
@@ -30,6 +40,8 @@ const projects = [
     description:
       "Dopamind is an Android application designed to help you track and enhance your mental well-being. It provides tools and features that empower you to take control of your mental health journey.",
     image: "/images/projects/dopamind.png",
+    link: "https://dopamind.site",
+    github: "#",
   },
   {
     id: 5,
@@ -37,6 +49,8 @@ const projects = [
     description:
       "Susun Jadwal is a website designed to help users create and organize class schedules for their studies. It provides a simple and efficient way to plan your academic timetable.",
     image: "/images/projects/susunjadwal.png",
+    link: "https://susunjadwal.vercel.app",
+    github: "https://github.com/Brilliahib/cms-susunjadwal",
   },
   {
     id: 6,
@@ -44,6 +58,8 @@ const projects = [
     description:
       "e-Fasilitasi is a website designed for documentation and archiving activities related to facilitation programs organized by the Communication and Information Office (Diskominfo) of Central Java.",
     image: "/images/projects/efasilitasi.png",
+    link: "https://e-fasilitasi.site",
+    github: "https://github.com/akhilazahraa/fasilitasi-diskominfo",
   },
   {
     id: 7,
@@ -51,6 +67,8 @@ const projects = [
     description:
       "Website Forum Studi Teknik is an online platform that showcases the profile of the Forum Studi Teknik, an organization under the Faculty of Engineering at Diponegoro University (UNDIP). ",
     image: "/images/projects/fstundip.png",
+    link: "https://fstundip.com",
+    github: "#",
   },
   {
     id: 8,
@@ -58,6 +76,8 @@ const projects = [
     description:
       "Pantau Tanaman is a website designed to monitor plant growth and health. It provides tools and features to help users track the condition of their plants",
     image: "/images/projects/pantautanaman.png",
+    link: "https://pantautanaman.netlify.app",
+    github: "#",
   },
 ];
 
@@ -78,6 +98,23 @@ export default function CardProjectList() {
               <div className="space-y-2">
                 <h1 className="text-base font-semibold">{project.title}</h1>
                 <p className="text-sm tracking-tight">{project.description}</p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Badge>
+                  <Link href={project.link} className="flex items-center gap-2">
+                    <Globe className="h-4 w-4" />
+                    Preview
+                  </Link>
+                </Badge>
+                <Badge>
+                  <Link
+                    href={project.github}
+                    className="flex items-center gap-2"
+                  >
+                    <Github className="h-4 w-4" />
+                    Github
+                  </Link>
+                </Badge>
               </div>
             </div>
           </CardContent>
