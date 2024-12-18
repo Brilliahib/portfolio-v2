@@ -12,6 +12,7 @@ const experiences = [
     title: "Diskominfo Jawa Tengah",
     imageSrc: "/images/kominfo.png",
     altText: "Diskominfo Jawa Tengah",
+    position: "Fullstack Web Developer",
     description:
       "Diskominfo Jawa Tengah is the official communication and information agency of Central Java Province, Indonesia. It is responsible for managing public information, communication, and technology infrastructure in the region.",
   },
@@ -20,14 +21,16 @@ const experiences = [
     title: "ProjectKita",
     imageSrc: "/images/projectkita.jpg",
     altText: "ProjectKita",
+    position: "Frontend Web Developer",
     description:
-      "ProjectKita is an Indonesian platform that connects volunteers with social projects across the country. It aims to facilitate community engagement and support various social initiatives.",
+      "ProjectKita is an automation manufacturing service located in the Semarang area, Central Java.",
   },
   {
     id: "item-3",
     title: "Bangkit Academy",
     imageSrc: "/images/bangkit.png",
     altText: "Bangkit",
+    position: "Cloud Computing Path",
     description:
       "Bangkit Academy is a student competency development program for a career in technology, designed through a partnership between the Director-General of Higher Education of the Ministry of Education and Culture, Google, Gojek, Tokopedia, Traveloka, and university partners. The program offers learning paths in Machine Learning, Mobile Development, and Cloud Computing.",
   },
@@ -57,7 +60,12 @@ export default function HomeExperience() {
                         alt={experience.altText}
                         className="max-w-[30px]"
                       />
-                      {experience.title}
+                      <div>
+                        <h1>{experience.title}</h1>
+                        <p className="font-base text-sm text-muted-foreground">
+                          {experience.position}
+                        </p>
+                      </div>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>{experience.description}</AccordionContent>
