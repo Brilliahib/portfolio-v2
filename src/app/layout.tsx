@@ -6,6 +6,7 @@ import Navbar from "@/components/atoms/navbar/Navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/organisms/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
+import GlobalProvider from "@/components/organisms/GlobalProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,16 +65,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <TooltipProvider>
-              <NextTopLoader />
-              <Navbar />
-              <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
-                <div className="w-full max-w-sm">
-                  {children}
-                  <Footer />
-                </div>
-              </main>
-            </TooltipProvider>
+            <GlobalProvider>
+              <TooltipProvider>
+                <NextTopLoader />
+                <Navbar />
+                <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
+                  <div className="w-full max-w-sm">{children}</div>
+                </main>
+              </TooltipProvider>
+            </GlobalProvider>
           </ThemeProvider>
         </main>
       </body>
