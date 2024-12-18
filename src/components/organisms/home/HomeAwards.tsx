@@ -10,31 +10,25 @@ export default function HomeAwards() {
           </p>
           <div>
             <ol className="space-y-4">
-              <li>
-                <div className="flex justify-between text-sm">
-                  <h1 className="max-w-xs">
-                    1st Winner Web Design Competition CITECH LAOS 2024
-                  </h1>
-                  <p>Okt 2024</p>
-                </div>
+              <li className="flex justify-between text-sm">
+                <h1 className="max-w-xs">
+                  1st Winner Web Competition CITECH 2024
+                </h1>
+                <p>Okt 2024</p>
               </li>
               <hr />
-              <li>
-                <div className="flex justify-between text-sm">
-                  <h1 className="max-w-xs">
-                    1st Winner UI/UX Competition NIFC UMRI 2024
-                  </h1>
-                  <p>Mei 2024</p>
-                </div>
+              <li className="flex justify-between text-sm">
+                <h1 className="max-w-xs">
+                  1st Winner UI/UX Competition NIFC UMRI 2024
+                </h1>
+                <p>Mei 2024</p>
               </li>
               <hr />
-              <li>
-                <div className="flex justify-between text-sm">
-                  <h1 className="max-w-xs">
-                    2nd Winner Web Competition FESTIDA 2024
-                  </h1>
-                  <p>Jan 2024</p>
-                </div>
+              <li className="flex justify-between text-sm">
+                <h1 className="max-w-xs">
+                  2nd Winner Web Competition FESTIDA 2024
+                </h1>
+                <p>Jan 2024</p>
               </li>
             </ol>
           </div>
