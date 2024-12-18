@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/atoms/navbar/Navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/organisms/footer/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +65,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <TooltipProvider>
+              <NextTopLoader />
               <Navbar />
               <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
                 <div className="w-full max-w-sm">

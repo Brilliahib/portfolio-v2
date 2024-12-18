@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HomeProject() {
   return (
     <>
-      <section className="pt-24" id="project">
+      <section className="pt-24">
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-xl font-semibold">My Highlighted Projects</h1>

@@ -5,6 +5,9 @@ export default function Footer() {
   return (
     <>
       <section className="max-w-sm pt-24" id="footer">
+        <div className="mb-8">
+          <hr />
+        </div>
         <div className="space-y-6">
           <div className="space-y-1">
             <h1 className="text-xl font-semibold">Have any project ideas?</h1>

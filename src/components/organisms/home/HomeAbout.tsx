@@ -42,7 +42,7 @@ export default function HomeAbout() {
   ];
   return (
     <>
-      <section id="about" className="pt-24">
+      <section className="pt-24">
         <div className="space-y-4">
           <h1 className="text-xl font-semibold">Who is me?</h1>
           <p className="tracking-tight">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { House, Code, User, BriefcaseBusiness } from "lucide-react";
+import { House, Code, User, BriefcaseBusiness, Bot } from "lucide-react";
 import { ThemeToggler } from "@/components/theme-toggler";
 import {
   Tooltip,
@@ -9,17 +9,16 @@ import {
 import { Button } from "@/components/ui/button";
 
 const nav = [
-  { icon: <House />, name: "Home", href: "#home" },
-  { icon: <User />, name: "About", href: "#about" },
-  { icon: <BriefcaseBusiness />, name: "Experience", href: "#experience" },
-  { icon: <Code />, name: "Project", href: "#project" },
+  { icon: <House />, name: "Home", href: "/" },
+  { icon: <Code />, name: "Project", href: "/project" },
+  { icon: <Bot />, name: "Bot", href: "/bot" },
 ];
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-center items-end h-20 fixed z-30">
-      <div className="absolute top-0 w-full h-20 bg-gradient-to-b from-white dark:from-zinc-950 to-transparent z-40"></div>
-      <div className="flex items-center gap-x-1 border rounded-lg p-1 bg-white dark:bg-zinc-950 shadow-xl z-50">
+    <div className="fixed z-30 flex h-20 w-full items-end justify-center">
+      <div className="absolute top-0 z-40 h-20 w-full bg-gradient-to-b from-white to-transparent dark:from-zinc-950"></div>
+      <div className="z-50 flex items-center gap-x-1 rounded-lg border bg-white p-1 shadow-xl dark:bg-zinc-950">
         {nav.map((item, i) => (
           <Tooltip delayDuration={100} key={i}>
             <TooltipTrigger asChild>
