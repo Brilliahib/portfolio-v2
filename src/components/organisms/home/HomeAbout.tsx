@@ -60,12 +60,12 @@ export default function HomeAbout() {
             code.
           </p>
         </div>
-        <div className="relative overflow-hidden mt-7">
+        <div className="relative mt-7 overflow-hidden">
           <Marquee pauseOnHover className="[--duration:20s]">
             {tech.map((item, i) => (
               <div
                 key={i}
-                className="max-w-none text-sm flex items-center gap-x-2 mx-2 cursor-default"
+                className="mx-2 flex max-w-none cursor-default items-center gap-x-2 text-sm"
               >
                 <Image
                   src={item.logo || "/vercel.svg"}

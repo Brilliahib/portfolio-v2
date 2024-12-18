@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeFooter() {
+export default function Footer() {
   return (
     <>
-      <section className="pt-24" id="footer">
+      <section className="max-w-sm pt-24" id="footer">
         <div className="space-y-6">
           <div className="space-y-1">
-            <h1 className="font-semibold text-xl">Have any project ideas?</h1>
-            <h1 className="font-semibold text-xl">Ask something?</h1>
+            <h1 className="text-xl font-semibold">Have any project ideas?</h1>
+            <h1 className="text-xl font-semibold">Ask something?</h1>
           </div>
           <div className="flex gap-4">
             <Image

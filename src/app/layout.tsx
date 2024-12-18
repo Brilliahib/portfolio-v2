@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/atoms/navbar/Navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Footer from "@/components/organisms/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  ${figtree.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${figtree.variable} antialiased`}
       >
         <main className="font">
           <ThemeProvider
@@ -64,7 +65,12 @@ export default function RootLayout({
           >
             <TooltipProvider>
               <Navbar />
-              {children}
+              <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
+                <div className="w-full max-w-sm">
+                  {children}
+                  <Footer />
+                </div>
+              </main>
             </TooltipProvider>
           </ThemeProvider>
         </main>
