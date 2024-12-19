@@ -24,7 +24,7 @@ export default function HomeAbout() {
       logo: "/images/docker.png",
     },
     {
-      name: "Google Cloud Platform",
+      name: "Google Cloud",
       logo: "/images/gcp.png",
     },
     {
@@ -38,6 +38,14 @@ export default function HomeAbout() {
     {
       name: "Laravel",
       logo: "/images/laravel.png",
+    },
+    {
+      name: "Tailwind CSS",
+      logo: "/images/tailwind.png",
+    },
+    {
+      name: "MySQL",
+      logo: "/images/mysql.png",
     },
   ];
   return (

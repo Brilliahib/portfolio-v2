@@ -72,7 +72,7 @@ const ChatBot = () => {
   }, []);
 
   return (
-    <div className="flex flex-col space-y-4 md:min-h-[80vh] md:space-y-24">
+    <div className="flex flex-col space-y-4 md:min-h-[70vh] md:space-y-8">
       <div className="space-y-4">
         <h2 className="mb-4 text-xl font-semibold">🤖 My Assistant Bot</h2>
         <p className="hidden md:flex">
@@ -80,7 +80,7 @@ const ChatBot = () => {
         </p>
       </div>
 
-      <ScrollArea className="h-[50vh] md:h-[50vh]">
+      <ScrollArea className="h-[50vh] md:h-[60vh]">
         <div className="mb-4 flex-grow overflow-y-auto pr-4">
           <div className="space-y-4">
             {messages.map((msg, idx) => (

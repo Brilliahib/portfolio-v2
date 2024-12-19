@@ -1,3 +1,4 @@
+import Footer from "@/components/organisms/footer/Footer";
 import ProjectWrapper from "@/components/organisms/project/ProjectWrapper";
 
 export default function ProjectPage() {
@@ -5,6 +6,7 @@ export default function ProjectPage() {
     <>
       <section id="project">
         <ProjectWrapper />
+        <Footer />
       </section>
     </>
   );
