@@ -1,12 +1,12 @@
 export const projectLast = [
   {
     id: 1,
-    title: "Codelingo",
+    title: "Vintagee",
     description:
-      "CodeLingo is a coding learning program designed specifically for children, from beginners to intermediate levels.",
-    image: "/images/projects/codelingo.png",
-    link: "https://codelingo-dev.vercel.app",
-    github: "https://github.com/Brilliahib/codelingo",
+      "Vintagee is an online marketplace for buying and selling preloved fashion items, aiming to reduce textile waste and promote sustainable shopping.",
+    image: "/images/projects/vintagee.png",
+    link: "https://vintagee.vercel.app",
+    github: "https://github.com/Brilliahib/vintagee",
     tech: [
       {
         id: 1,
@@ -127,16 +127,24 @@ export const projectLast = [
 export const projects = [
   {
     id: 1,
+    title: "Vintagee",
+    description:
+      "Vintagee is an online marketplace for buying and selling preloved fashion items, aiming to reduce textile waste and promote sustainable shopping.",
+    image: "/images/projects/vintagee.png",
+    link: "https://vintagee.vercel.app",
+    github: "https://github.com/Brilliahib/vintagee",
+  },
+  {
+    id: 2,
     title: "Codelingo",
     description:
       "CodeLingo is a coding learning program designed specifically for children, from beginners to intermediate levels.",
     image: "/images/projects/codelingo.png",
     link: "https://codelingo-dev.vercel.app",
     github: "https://github.com/Brilliahib/codelingo",
-    tech: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Tumbuh Sahabat",
     description:
       "Tumbuh Sahabat is a web-based application designed to help children with Down syndrome monitor their nutritional intake and learn through educational games.",
@@ -145,7 +153,7 @@ export const projects = [
     github: "https://github.com/Brilliahib/cms-sahabat-tumbuh",
   },
   {
-    id: 3,
+    id: 4,
     title: "Charingcub",
     description:
       "Charingcub is a web application designed to help parents find daycare or childcare facilities that meet their needs.",
@@ -155,7 +163,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Dopamind +",
     description:
       "Dopamind is an Android application designed to help you track and enhance your mental well-being. It provides tools and features that empower you to take control of your mental health journey.",
@@ -164,7 +172,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "Susun Jadwal",
     description:
       "Susun Jadwal is a website designed to help users create and organize class schedules for their studies. It provides a simple and efficient way to plan your academic timetable.",
@@ -173,7 +181,7 @@ export const projects = [
     github: "https://github.com/Brilliahib/cms-susunjadwal",
   },
   {
-    id: 6,
+    id: 7,
     title: "e-Fasilitasi",
     description:
       "e-Fasilitasi is a website designed for documentation and archiving activities related to facilitation programs organized by the Communication and Information Office (Diskominfo) of Central Java.",
@@ -182,7 +190,7 @@ export const projects = [
     github: "https://github.com/akhilazahraa/fasilitasi-diskominfo",
   },
   {
-    id: 7,
+    id: 8,
     title: "Forum Studi Teknik UNDIP",
     description:
       "Website Forum Studi Teknik is an online platform that showcases the profile of the Forum Studi Teknik, an organization under the Faculty of Engineering at Diponegoro University (UNDIP). ",
@@ -191,7 +199,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 8,
+    id: 9,
     title: "Pantau Tanaman",
     description:
       "Pantau Tanaman is a website designed to monitor plant growth and health. It provides tools and features to help users track the condition of their plants",

@@ -70,7 +70,10 @@ export default function RootLayout({
                 <NextTopLoader />
                 <Navbar />
                 <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
-                  <div className="w-full max-w-sm">{children}</div>
+                  <div className="w-full max-w-sm">
+                    {children}
+                    <Footer />
+                  </div>
                 </main>
               </TooltipProvider>
             </GlobalProvider>
