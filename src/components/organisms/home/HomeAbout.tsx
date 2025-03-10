@@ -1,3 +1,4 @@
+import CardGithubStats from "@/components/atoms/card/CardGithubStats";
 import Marquee from "@/components/ui/marquee";
 import Image from "next/image";
 
@@ -50,7 +51,7 @@ export default function HomeAbout() {
   ];
   return (
     <>
-      <section className="pt-24">
+      <section className="space-y-7 pt-24">
         <div className="space-y-4">
           <h1 className="text-xl font-semibold">Who is me?</h1>
           <p className="tracking-tight">
@@ -68,7 +69,7 @@ export default function HomeAbout() {
             code.
           </p>
         </div>
-        <div className="relative mt-7 overflow-hidden">
+        <div className="relative overflow-hidden">
           <Marquee pauseOnHover className="[--duration:20s]">
             {tech.map((item, i) => (
               <div
@@ -89,6 +90,7 @@ export default function HomeAbout() {
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/5 bg-gradient-to-r from-white dark:from-background"></div>
           <div className="pointer-events-none absolute inset-y-0 right-0 w-1/5 bg-gradient-to-l from-white dark:from-background"></div>
         </div>
+        <CardGithubStats />
       </section>
     </>
   );

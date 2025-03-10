@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/atoms/navbar/Navbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Footer from "@/components/organisms/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
 import GlobalProvider from "@/components/organisms/GlobalProvider";
+import Navbar from "@/components/atoms/navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,17 +61,17 @@ export default function RootLayout({
         <main className="font">
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
             <GlobalProvider>
               <TooltipProvider>
                 <NextTopLoader />
-                <Navbar />
-                <main className="flex w-full justify-center px-5 pb-12 pt-32 sm:px-0">
+                <main className="flex w-full justify-center px-5 pb-12 pt-24 sm:px-0">
                   <div className="w-full max-w-sm">
                     {children}
+                    <Navbar />
                     <Footer />
                   </div>
                 </main>

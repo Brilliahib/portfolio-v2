@@ -1,56 +1,106 @@
+"use client";
+
+import { easeInOut, motion } from "framer-motion";
+
+import { useEffect, useState } from "react";
+
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import {
-  House,
-  Code,
-  User,
-  BriefcaseBusiness,
-  Bot,
-  MessageCircleMore,
-} from "lucide-react";
-import { ThemeToggler } from "@/components/theme-toggler";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
+import { navItems } from "@/data/data";
 
-const nav = [
-  { icon: <House />, name: "Home", href: "/" },
-  { icon: <Code />, name: "Project", href: "/project" },
-  { icon: <MessageCircleMore />, name: "Guestbook", href: "/soon" },
-];
+const Navbar = () => {
+  const pathname = usePathname();
+  const { theme, setTheme } = useTheme();
 
-export default function Navbar() {
-  return (
-    <div className="fixed z-30 flex h-20 w-full items-end justify-center">
-      <div className="absolute top-0 z-40 h-20 w-full bg-gradient-to-b from-white to-transparent dark:from-zinc-950"></div>
-      <div className="z-50 flex items-center gap-x-1 rounded-full border bg-white p-1 px-4 shadow-xl dark:bg-zinc-950">
-        {nav.map((item, i) => (
-          <Tooltip delayDuration={100} key={i}>
-            <TooltipTrigger asChild>
-              <Link href={item.href || "#"}>
-                <Button className="rounded-full" variant="ghost" size="icon">
-                  {item.icon}
-                </Button>
-              </Link>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>{item.name}</p>
-            </TooltipContent>
-          </Tooltip>
-        ))}
-        <Tooltip delayDuration={100}>
-          <TooltipTrigger asChild>
-            <Button className="rounded-full" variant="ghost" size="icon">
-              <ThemeToggler />
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>Theme</p>
-          </TooltipContent>
-        </Tooltip>
-      </div>
-    </div>
+  const [activeTab, setActiveTab] = useState<number | null>(
+    navItems.find((item) => item.href === pathname)?.id || null,
   );
-}
+
+  useEffect(() => {
+    setActiveTab(navItems.find((item) => item.href === pathname)?.id || null);
+  }, [pathname]);
+
+  const duration = 0.4;
+
+  const dockVariants = {
+    open: {
+      width: "fit-content",
+      opacity: 1,
+      transition: {
+        easeInOut,
+        duration,
+      },
+    },
+    closed: {
+      width: 0,
+      opacity: 0,
+      transition: {
+        easeInOut,
+        duration,
+      },
+    },
+  };
+
+  const initialX = activeTab !== null ? (activeTab - 1) * 40 : 0;
+
+  return (
+    <motion.div
+      variants={dockVariants}
+      initial="closed"
+      animate="open"
+      className="nav-shadow fixed inset-x-0 bottom-8 z-50 mx-auto rounded-2xl bg-popover p-1"
+    >
+      <div className="relative flex items-center">
+        {activeTab !== null && (
+          <motion.span
+            className="absolute bottom-0 top-0 z-[99] w-10 rounded-[12px] bg-primary/40 mix-blend-difference outline-none ring-0 dark:bg-primary/20"
+            initial={{ translateX: initialX, opacity: 0, scale: 0 }}
+            animate={{ translateX: (activeTab - 1) * 40, opacity: 1, scale: 1 }}
+            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+          />
+        )}
+        {navItems.map((item) =>
+          item.href ? (
+            <Link
+              key={item.id}
+              href={item.href}
+              scroll={true}
+              onClick={() => setActiveTab(item.id)}
+              className={`${
+                activeTab === item.id
+                  ? "text-foreground"
+                  : "text-muted-foreground"
+              } group/dock relative h-10 w-10 p-3 text-sm transition-all duration-300 ease-in-out focus-visible:outline-none`}
+              style={{
+                WebkitTapHighlightColor: "transparent",
+              }}
+              aria-label={item.label}
+            >
+              {item.icon}
+              <span className="pointer-events-none absolute -top-8 left-1/2 hidden -translate-x-1/2 -translate-y-2 scale-75 rounded-md border bg-popover p-1 px-1.5 text-[10px] font-medium leading-none text-foreground opacity-0 transition-all duration-200 ease-in-out group-hover/dock:translate-y-0 group-hover/dock:scale-100 group-hover/dock:opacity-100 md:block">
+                {item.label}
+              </span>
+            </Link>
+          ) : (
+            <button
+              key={item.id}
+              onClick={() => {
+                setTheme(theme === "dark" ? "dark" : "dark");
+              }}
+              className={`group/dock relative h-10 w-10 p-3 text-sm text-yellow-500 transition-all duration-300 ease-in-out focus-visible:outline-none dark:text-indigo-600 [&>svg]:fill-yellow-400 dark:[&>svg]:fill-indigo-500`}
+              aria-label="Change theme button"
+            >
+              {item.icon}
+              <span className="pointer-events-none absolute -top-8 left-1/2 hidden -translate-x-1/2 -translate-y-2 scale-75 rounded-md border bg-popover p-1 px-1.5 text-[10px] font-medium leading-none text-foreground opacity-0 transition-all duration-200 ease-in-out group-hover/dock:translate-y-0 group-hover/dock:scale-100 group-hover/dock:opacity-100 md:block">
+                {item.label}
+              </span>
+            </button>
+          ),
+        )}
+      </div>
+    </motion.div>
+  );
+};
+
+export default Navbar;

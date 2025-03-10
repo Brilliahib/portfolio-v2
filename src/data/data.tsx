@@ -1,3 +1,37 @@
+import { Book, BotMessageSquare, Code, Hexagon, Home } from "lucide-react";
+
+export const navItems = [
+  {
+    id: 1,
+    label: "Home",
+    href: "/",
+    icon: <Home className="h-full w-full" />,
+  },
+  {
+    id: 2,
+    label: "Project",
+    href: "/project",
+    icon: <Code className="h-full w-full" />,
+  },
+  {
+    id: 3,
+    label: "Chatbot",
+    href: "#",
+    icon: <BotMessageSquare className="h-full w-full" />,
+  },
+  {
+    id: 4,
+    label: "Guestbook",
+    href: "#",
+    icon: <Book className="h-full w-full" />,
+  },
+  {
+    id: 5,
+    label: "Theme",
+    icon: <Hexagon className="h-full w-full" />,
+  },
+];
+
 export const projectLast = [
   {
     id: 1,
