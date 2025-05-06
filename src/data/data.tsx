@@ -16,13 +16,13 @@ export const navItems = [
   {
     id: 3,
     label: "Chatbot",
-    href: "#",
+    href: "/bot",
     icon: <BotMessageSquare className="h-full w-full" />,
   },
   {
     id: 4,
     label: "Guestbook",
-    href: "#",
+    href: "/soon",
     icon: <Book className="h-full w-full" />,
   },
   {

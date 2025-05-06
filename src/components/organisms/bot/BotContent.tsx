@@ -99,7 +99,7 @@ const ChatBot = () => {
         </div>
       </ScrollArea>
 
-      <div className="fixed bottom-0 left-0 right-0 z-10 flex items-center justify-center space-x-2 p-4">
+      <div className="flex items-center justify-center space-x-2">
         <div className="flex w-full max-w-sm space-x-2 bg-white dark:bg-black">
           <Input
             type="text"

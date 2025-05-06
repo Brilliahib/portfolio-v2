@@ -8,6 +8,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems } from "@/data/data";
+import { Moon, Sun } from "lucide-react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -86,12 +87,16 @@ const Navbar = () => {
             <button
               key={item.id}
               onClick={() => {
-                setTheme(theme === "dark" ? "dark" : "dark");
+                setTheme(theme === "dark" ? "light" : "dark");
               }}
               className={`group/dock relative h-10 w-10 p-3 text-sm text-yellow-500 transition-all duration-300 ease-in-out focus-visible:outline-none dark:text-indigo-600 [&>svg]:fill-yellow-400 dark:[&>svg]:fill-indigo-500`}
               aria-label="Change theme button"
             >
-              {item.icon}
+              {theme === "dark" ? (
+                <Sun className="h-full w-full" />
+              ) : (
+                <Moon className="h-full w-full" />
+              )}
               <span className="pointer-events-none absolute -top-8 left-1/2 hidden -translate-x-1/2 -translate-y-2 scale-75 rounded-md border bg-popover p-1 px-1.5 text-[10px] font-medium leading-none text-foreground opacity-0 transition-all duration-200 ease-in-out group-hover/dock:translate-y-0 group-hover/dock:scale-100 group-hover/dock:opacity-100 md:block">
                 {item.label}
               </span>
