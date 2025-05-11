@@ -1,4 +1,59 @@
-import { Book, BotMessageSquare, Code, Hexagon, Home } from "lucide-react";
+import {
+  BookMarked,
+  BotMessageSquare,
+  Code,
+  Hexagon,
+  Home,
+} from "lucide-react";
+
+export const collection = [
+  {
+    id: 1,
+    title: "Tutorial Next JS Bahasa Indonesia",
+    description:
+      "A playlist that learns about next js using the Indonesian language",
+    link: "https://www.youtube.com/watch?v=zw5wKyqDEUc&list=PLmF_zPV9ZcP2aYRuoEsMla5gqNjxP-V20",
+  },
+  {
+    id: 2,
+    title: "Build E-commerce with Next JS",
+    description: "A playlist that builds an e-commerce website using Next JS",
+    link: "https://www.youtube.com/watch?v=BrBs5PWAAoo&list=PLmF_zPV9ZcP39zezaMMdh26j2DzEKwqNw",
+  },
+  {
+    id: 3,
+    title: "Next JS 15 Tutorial - Beginner to Advanced",
+    description:
+      "A playlist that learns about next js from beginner to advanced",
+    link: "https://www.youtube.com/watch?v=b4ba60j_4o8&list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY",
+  },
+  {
+    id: 4,
+    title: "Learning Tailwind CSS",
+    description: "A playlist that learns about tailwind css",
+    link: "https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h",
+  },
+  {
+    id: 5,
+    title: "Build Portfolio with Tailwind CSS",
+    description: "A video that builds a portfolio website using tailwind css",
+    link: "https://www.youtube.com/watch?v=8Ea4oq8qFtM&t=4777s",
+  },
+  {
+    id: 6,
+    title: "Tutorial Basic Rest API with Express JS, Prisma, PostgreSQL",
+    description:
+      "A video that learns about Rest API using Express JS, Prisma, and PostgreSQL",
+    link: "https://www.youtube.com/watch?v=l9reBF_i00g&t=2893s",
+  },
+  {
+    id: 7,
+    title: "Client-side Rendering vs Server-side Rendering",
+    description:
+      "A video that explains the difference between client-side rendering and server-side rendering",
+    link: "https://www.youtube.com/watch?v=9-mlXQqa6m0&t=350s",
+  },
+];
 
 export const navItems = [
   {
@@ -15,15 +70,15 @@ export const navItems = [
   },
   {
     id: 3,
-    label: "Chatbot",
-    href: "/bot",
-    icon: <BotMessageSquare className="h-full w-full" />,
+    label: "Collection",
+    href: "/collections",
+    icon: <BookMarked className="h-full w-full" />,
   },
   {
     id: 4,
-    label: "Guestbook",
-    href: "/soon",
-    icon: <Book className="h-full w-full" />,
+    label: "Chatbot",
+    href: "/bot",
+    icon: <BotMessageSquare className="h-full w-full" />,
   },
   {
     id: 5,
