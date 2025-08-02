@@ -8,7 +8,7 @@ export default function HomeContent() {
   return (
     <>
       <section>
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-md">
           <HomeJumbotron />
           <HomeAbout />
           <HomeExperience />

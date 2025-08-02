@@ -74,12 +74,12 @@ export default function RootLayout({
               <TooltipProvider>
                 <NextTopLoader />
                 <main className="flex w-full justify-center px-5 pb-12 pt-24 sm:px-0">
-                  <div className="w-full max-w-sm">
+                  <div className="w-full max-w-md">
                     {children}
                     <Navbar />
-                    <Footer />
                   </div>
                 </main>
+                <Footer />
               </TooltipProvider>
             </GlobalProvider>
           </ThemeProvider>
