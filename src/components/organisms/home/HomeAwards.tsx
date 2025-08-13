@@ -12,6 +12,13 @@ export default function HomeAwards() {
             <ol className="space-y-4">
               <li className="flex justify-between text-sm">
                 <h1 className="max-w-xs">
+                  Gold Medal World Young Inventors Exhibition (WYIE)
+                </h1>
+                <p>May 2025</p>
+              </li>
+              <hr />
+              <li className="flex justify-between text-sm">
+                <h1 className="max-w-xs">
                   Finalist Web Application Competition TECHCOMNFEST 2025
                 </h1>
                 <p>Jan 2025</p>

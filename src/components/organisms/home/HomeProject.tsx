@@ -11,7 +11,7 @@ export default function HomeProject() {
       <section className="pt-24">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-xl font-semibold">My Highlighted Projects</h1>
+            <h1 className="text-xl font-semibold">My Lastest Projects</h1>
             <p className="tracking-tight">
               I have worked on various projects, ranging from dummy projects
               created for learning purposes to real-world projects implemented

@@ -5,6 +5,14 @@ import Image from "next/image";
 export default function HomeAbout() {
   const tech = [
     {
+      name: "Wordpress",
+      logo: "/images/wordpress.png",
+    },
+    {
+      name: "Cpanel",
+      logo: "/images/cpanel.png",
+    },
+    {
       name: "Typescript",
       logo: "/images/typescript.png",
     },
