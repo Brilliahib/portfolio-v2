@@ -4,8 +4,11 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <section className="flex w-full justify-center" id="footer">
-        <div className="max-w-xl space-y-12 py-12 pb-24 md:py-28">
+      <section
+        className="flex w-full px-5 md:justify-center md:px-0"
+        id="footer"
+      >
+        <div className="space-y-12 py-12 pb-24 md:max-w-xl md:py-28">
           <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 md:gap-y-12">
             <div className="space-y-4">
               <div className="flex gap-4">
