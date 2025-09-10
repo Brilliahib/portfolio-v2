@@ -3,9 +3,9 @@ import CollectionHeading from "./CollectionHeading";
 
 export default function CollectionWrapper() {
   return (
-    <div>
+    <section className="space-y-7">
       <CollectionHeading />
       <CollectionContent />
-    </div>
+    </section>
   );
 }

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SendHorizonal } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import TypographyPage from "@/components/atoms/typography/TypographyPage";
 
 const ChatBot = () => {
   const [message, setMessage] = useState<string>("");
@@ -73,12 +74,10 @@ const ChatBot = () => {
 
   return (
     <div className="flex flex-col space-y-4 md:min-h-[70vh] md:space-y-8">
-      <div className="space-y-4">
-        <h2 className="mb-4 text-xl font-semibold">🤖 My Assistant Bot</h2>
-        <p className="hidden md:flex">
-          I have created an assistant bot using generative AI to serve you
-        </p>
-      </div>
+      <TypographyPage
+        title="My Assistant Bot"
+        description="I have created an assistant bot using generative AI to serve you"
+      />
 
       <ScrollArea className="h-[50vh] md:h-[60vh]">
         <div className="mb-4 flex-grow overflow-y-auto pr-4">

@@ -1,50 +1,45 @@
+import Typography from "@/components/atoms/typography/Typography";
+import { awards } from "@/data/data";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Image from "next/image";
+
 export default function HomeAwards() {
   return (
     <>
       <section className="pt-24">
         <div className="space-y-4">
-          <h1 className="text-xl font-semibold">Awards</h1>
-          <p className="tracking-tight">
-            I have gained numerous awards and recognitions through the dedicated
-            application of my skills and abilities in various fields.
-          </p>
+          <Typography
+            title="Proud Moments"
+            description="I have gained numerous awards and recognitions through the dedicated application of my skills and abilities in various fields."
+          />
           <div>
-            <ol className="space-y-4">
-              <li className="flex justify-between text-sm">
-                <h1 className="max-w-xs">
-                  Gold Medal World Young Inventors Exhibition (WYIE)
-                </h1>
-                <p>May 2025</p>
-              </li>
-              <hr />
-              <li className="flex justify-between text-sm">
-                <h1 className="max-w-xs">
-                  Finalist Web Application Competition TECHCOMNFEST 2025
-                </h1>
-                <p>Jan 2025</p>
-              </li>
-              <hr />
-              <li className="flex justify-between text-sm">
-                <h1 className="max-w-xs">
-                  1st Winner Web Competition CITECH 2024
-                </h1>
-                <p>Okt 2024</p>
-              </li>
-              <hr />
-              <li className="flex justify-between text-sm">
-                <h1 className="max-w-xs">
-                  1st Winner UI/UX Competition NIFC UMRI 2024
-                </h1>
-                <p>Mei 2024</p>
-              </li>
-              <hr />
-              <li className="flex justify-between text-sm">
-                <h1 className="max-w-xs">
-                  2nd Winner Web Competition FESTIDA 2024
-                </h1>
-                <p>Jan 2024</p>
-              </li>
-            </ol>
+            <Accordion type="single" collapsible className="w-full">
+              {awards.map((award) => (
+                <AccordionItem key={award.id} value={award.slug}>
+                  <AccordionTrigger>
+                    <div>
+                      <h1>{award.title}</h1>
+                      <p className="text-sm text-muted-foreground">
+                        {award.date}
+                      </p>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    <Image
+                      src={award.certification}
+                      alt={award.title}
+                      width={1000}
+                      height={1000}
+                    />
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>

@@ -3,19 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-figtree);
+  font-family: var(--font-rubik);
 }
 
-.font-geist-sans {
-  font-family: var(--font-geist-sans);
-}
-
-.font-figtree {
-  font-family: var(--font-figtree);
-}
-
-.font-mona-sans {
-  font-family: var(--font-mona-sans);
+.font-jakarta-sans {
+  font-family: var(--font-jakarta-sans);
 }
 
 @layer base {

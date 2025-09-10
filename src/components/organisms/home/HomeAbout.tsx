@@ -61,18 +61,22 @@ export default function HomeAbout() {
     <>
       <section className="space-y-7 pt-24">
         <div className="space-y-4">
-          <h1 className="text-xl font-semibold">Who is me?</h1>
-          <p className="tracking-tight">
+          <h3 className="font-jakarta-sans text-md font-bold uppercase leading-none text-foreground">
+            Who is me?
+          </h3>
+          <p className="tracking-tight text-muted-foreground">
             I am a{" "}
-            <span className="font-semibold">Computer Engineering Student</span>{" "}
-            at <span className="font-semibold">Diponegoro University</span>. My
-            passion is in{" "}
-            <span className="font-semibold">Software Engineer</span> and I
+            <span className="text-foreground">
+              Computer Engineering Student
+            </span>{" "}
+            at <span className="text-foreground">Diponegoro University</span>.
+            My passion is in{" "}
+            <span className="text-foreground">Software Engineer</span> and I
             usually work on projects using{" "}
-            <span className="font-semibold">Next.js, Typescript</span>, which
+            <span className="text-foreground">Next.js, Typescript</span>, which
             allows me to create modern, high-performance web applications.
             Through my projects, I continuously{" "}
-            <span className="font-semibold">explore new technologies</span> ,
+            <span className="text-foreground">explore new technologies</span> ,
             improve my coding skills, and strive to write clean, maintainable
             code.
           </p>

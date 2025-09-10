@@ -29,9 +29,9 @@ export default function HomeJumbotron() {
             <p className="text-sm text-muted-foreground">Software Engineer</p>
           </div>
         </div>
-        <p className="tracking-tight">
+        <p className="tracking-tight text-muted-foreground">
           Software Engineer. I like learning new things even though my hobby is
-          just playing <span className="font-semibold">Tiktok.</span>
+          just playing <span className="text-white">Tiktok.</span>
         </p>
       </div>
       <div className="group/map xs:aspect-video relative aspect-[5/3] h-auto w-full overflow-hidden rounded-xl border-[1.5px] bg-zinc-400 shadow-sm">
