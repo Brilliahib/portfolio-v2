@@ -31,8 +31,11 @@ export default function HomeJumbotron() {
           </div>
         </div>
         <p className="tracking-tight text-muted-foreground">
-          Software Engineer. I like learning new things even though my hobby is
-          just playing <span className="text-white">Tiktok.</span>
+          Software Engineer based in Semarang, Indonesia. Committed to
+          delivering{" "}
+          <span className="text-foreground">impactful solutions</span> and
+          dedicated to continuous{" "}
+          <span className="text-foreground">professional growth</span>.
         </p>
       </div>
       <div className="group/map xs:aspect-video relative aspect-[5/3] h-auto w-full overflow-hidden rounded-xl border-[1.5px] bg-zinc-400 shadow-sm">

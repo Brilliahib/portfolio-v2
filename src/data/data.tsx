@@ -57,7 +57,7 @@ export const experiences = [
   {
     id: "item-2",
     title: "ProjectKita",
-    imageSrc: "/images/projectkita.jpg",
+    imageSrc: "/images/projectkita.png",
     altText: "ProjectKita",
     position: "Frontend Web Developer",
     date: "Aug 2024 - Dec 2024",
@@ -65,6 +65,15 @@ export const experiences = [
   },
   {
     id: "item-3",
+    title: "Google Developer Student Clubs",
+    imageSrc: "/images/gdsc.webp",
+    altText: "Google Developer Student Clubs",
+    position: "Event Organizer",
+    date: "Sep 2023 - Dec 2024",
+    type: "Volunteer",
+  },
+  {
+    id: "item-4",
     title: "Diskominfo Jawa Tengah",
     imageSrc: "/images/kominfo.png",
     altText: "Diskominfo Jawa Tengah",

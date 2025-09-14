@@ -8,7 +8,7 @@ export default function HomeExperience() {
       <section className="pt-24">
         <div className="space-y-8">
           <Typography
-            title="My Experience"
+            title="My Work Experience"
             description="I have diverse experience in software engineering, including part-time work as a software developer, self-directed learning, and internships."
           />
           <div className="space-y-6">

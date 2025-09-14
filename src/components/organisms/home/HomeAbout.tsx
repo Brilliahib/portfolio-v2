@@ -56,6 +56,10 @@ export default function HomeAbout() {
       name: "MySQL",
       logo: "/images/mysql.png",
     },
+    {
+      name: "Flask",
+      logo: "/images/flask.png",
+    },
   ];
   return (
     <>
@@ -65,20 +69,13 @@ export default function HomeAbout() {
             Who is me?
           </h3>
           <p className="tracking-tight text-muted-foreground">
-            I am a{" "}
-            <span className="text-foreground">
-              Computer Engineering Student
-            </span>{" "}
-            at <span className="text-foreground">Diponegoro University</span>.
-            My passion is in{" "}
-            <span className="text-foreground">Software Engineer</span> and I
-            usually work on projects using{" "}
-            <span className="text-foreground">Next.js, Typescript</span>, which
-            allows me to create modern, high-performance web applications.
-            Through my projects, I continuously{" "}
-            <span className="text-foreground">explore new technologies</span> ,
-            improve my coding skills, and strive to write clean, maintainable
-            code.
+            I am a <span className="text-foreground">Software Engineer</span>{" "}
+            based in Semarang, Indonesia, and currently a Computer Engineering
+            student at Diponegoro University. I specialize in building modern,
+            high-performance web applications using{" "}
+            <span className="text-foreground">Next.js and TypeScript</span>.
+            Through my projects, I focus on clean, maintainable code while
+            continuously exploring new technologies and improving my skills.
           </p>
         </div>
         <div className="relative overflow-hidden">
