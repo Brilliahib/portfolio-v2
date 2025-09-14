@@ -7,6 +7,7 @@ import Footer from "@/components/organisms/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
 import GlobalProvider from "@/components/organisms/GlobalProvider";
 import Navbar from "@/components/atoms/navbar/Navbar";
+import { getMetadata } from "@/lib/metadata";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -20,10 +21,12 @@ const jakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = getMetadata({
   title: "Muhammad Ahib Ibrilli | Software Engineer",
   description:
     "Muhammad Ahib Ibrilli is a Software Engineer based in Semarang, Indonesia. Expert in building modern, scalable, and high-performance websites that help businesses and individuals grow online.",
+  url: "https://brilliahib.tech",
+  image: "https://brilliahib.tech/images/brilly.jpg",
   keywords: [
     "Muhammad Ahib Ibrilli",
     "brilliahib",
@@ -41,24 +44,9 @@ export const metadata: Metadata = {
     "professional website development",
     "modern web development Indonesia",
   ],
-  openGraph: {
-    title: "Muhammad Ahib Ibrilli | Software Engineer",
-    description:
-      "Software Engineer from Semarang, Indonesia. Focused on creating modern, scalable, and high-quality websites for businesses and personal brands.",
-    url: "https://brilliahib.tech",
-    siteName: "Muhammad Ahib Ibrilli | Software Engineer",
-    images: [
-      {
-        url: "https://brilliahib.tech/images/brilly.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Muhammad Ahib Ibrilli | Software Engineer",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
+  siteName: "Muhammad Ahib Ibrilli | Software Engineer",
+  type: "website",
+});
 
 export default function RootLayout({
   children,
