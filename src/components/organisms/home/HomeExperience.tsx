@@ -32,7 +32,7 @@ export default function HomeExperience() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-end gap-1">
+                <div className="hidden flex-col items-end gap-1 md:flex">
                   <p className="text-xs font-medium italic text-muted-foreground">
                     {experience.type}
                   </p>
