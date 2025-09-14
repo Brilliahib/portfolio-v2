@@ -3,10 +3,11 @@ import mapImage from "../../../../public/assets/map-v2.webp";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { BadgeCheck } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import SectionWrapper from "@/components/atoms/motion/SectionMotionWrapper";
 
 export default function HomeJumbotron() {
   return (
-    <section className="space-y-7">
+    <SectionWrapper className="space-y-7">
       <div className="space-y-7">
         <div className="flex items-center gap-4">
           <div className="relative h-12 w-12">
@@ -56,6 +57,6 @@ export default function HomeJumbotron() {
           </span>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
