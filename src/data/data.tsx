@@ -1,7 +1,7 @@
 import {
   BookMarked,
-  BotMessageSquare,
-  Code,
+  BriefcaseBusiness,
+  GlobeLock,
   Hexagon,
   Home,
 } from "lucide-react";
@@ -134,20 +134,21 @@ export const navItems = [
     id: 2,
     label: "Project",
     href: "/project",
-    icon: <Code className="h-full w-full" />,
+    icon: <BriefcaseBusiness className="h-full w-full" />,
   },
   {
     id: 3,
-    label: "Collection",
-    href: "/collections",
+    label: "Blog",
+    href: "/blog",
     icon: <BookMarked className="h-full w-full" />,
   },
   {
     id: 4,
-    label: "Chatbot",
-    href: "/bot",
-    icon: <BotMessageSquare className="h-full w-full" />,
+    label: "Collection",
+    href: "/collections",
+    icon: <GlobeLock className="h-full w-full" />,
   },
+
   {
     id: 5,
     label: "Theme",

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import mapImage from "../../../../public/assets/map-v2.webp";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { BadgeCheck, Loader } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function HomeJumbotron() {
   return (
@@ -16,7 +17,7 @@ export default function HomeJumbotron() {
                 className="object-cover"
               />
               <AvatarFallback>
-                <Loader />
+                <Skeleton className="h-12 w-12 rounded-full" />
               </AvatarFallback>
             </Avatar>
             <BadgeCheck

@@ -23,26 +23,41 @@ const jakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Muhammad Ahib Ibrilli | Software Engineer",
   description:
-    "Software Engineer. A Computer Engineering Student who like learning new things even though my hobby is just playing Tiktok.",
-  icons: [
-    { rel: "icon", url: "/images/favicon.ico", sizes: "16x16" },
-    { rel: "icon", url: "/images/favicon-32x32.png", sizes: "32x32" },
-    {
-      rel: "apple-touch-icon",
-      url: "/images/apple-touch-icon.png",
-      sizes: "180x180",
-    },
-    {
-      rel: "icon",
-      url: "/images/android-chrome-192x192.png",
-      sizes: "192x192",
-    },
-    {
-      rel: "icon",
-      url: "/images/android-chrome-512x512.png",
-      sizes: "512x512",
-    },
+    "Muhammad Ahib Ibrilli is a Software Engineer based in Semarang, Indonesia. Expert in building modern, scalable, and high-performance websites that help businesses and individuals grow online.",
+  keywords: [
+    "Muhammad Ahib Ibrilli",
+    "brilliahib",
+    "brilly",
+    "software engineer",
+    "web developer",
+    "website developer",
+    "website development",
+    "frontend developer",
+    "fullstack developer",
+    "software engineer Semarang",
+    "web developer Semarang",
+    "software engineer Indonesia",
+    "freelance web developer Semarang",
+    "professional website development",
+    "modern web development Indonesia",
   ],
+  openGraph: {
+    title: "Muhammad Ahib Ibrilli | Software Engineer",
+    description:
+      "Software Engineer from Semarang, Indonesia. Focused on creating modern, scalable, and high-quality websites for businesses and personal brands.",
+    url: "https://brilliahib.tech",
+    siteName: "Muhammad Ahib Ibrilli | Software Engineer",
+    images: [
+      {
+        url: "https://brilliahib.tech/images/brilly.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Muhammad Ahib Ibrilli | Software Engineer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

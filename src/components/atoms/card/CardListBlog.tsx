@@ -1,7 +1,6 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Blog } from "@/types/blog/blog";
 import { buildFromAppURL } from "@/utils/misc";
@@ -10,38 +9,41 @@ import { id } from "date-fns/locale";
 import Image from "next/image";
 import Link from "next/link";
 
-interface CardListBlogProps {
+interface Props {
   data?: Blog[];
   isLoading?: boolean;
+  all?: boolean;
 }
 
 function CardListBlogSkeleton() {
   return (
-    <Card className="overflow-hidden pt-0">
-      <Skeleton className="h-48 w-full rounded-t-xl pt-0" />
-      <CardContent className="space-y-2">
-        <Skeleton className="h-5 w-24 rounded-full" />
+    <div className="space-y-4">
+      <Skeleton className="h-[250px] w-full rounded-lg" />
+      <Skeleton className="h-6 w-24 rounded-full" />
+      <div className="space-y-2">
         <Skeleton className="h-6 w-full rounded-md" />
-        <Skeleton className="h-6 w-3/4 rounded-md" />
-      </CardContent>
-    </Card>
+        <Skeleton className="h-5 w-1/2 rounded-md" />
+      </div>
+    </div>
   );
 }
 
-export default function CardListBlog({ data, isLoading }: CardListBlogProps) {
+export default function CardListBlog({ data, isLoading, all = false }: Props) {
   if (isLoading) {
     return (
       <div className="space-y-8">
-        {Array.from({ length: 3 }).map((_, i) => (
+        {Array.from({ length: all ? 6 : 3 }).map((_, i) => (
           <CardListBlogSkeleton key={i} />
         ))}
       </div>
     );
   }
 
+  const blogsToShow = all ? (data ?? []) : (data?.slice(0, 3) ?? []);
+
   return (
     <div className="space-y-8">
-      {data?.slice(0, 3).map((blog) => (
+      {blogsToShow.map((blog) => (
         <Link
           key={blog.id}
           href={`https://blog.brilliahib.tech/blog/${blog.slug}`}

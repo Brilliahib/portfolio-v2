@@ -33,6 +33,7 @@ export default function Footer() {
                   </Link>
                   <Link href={"/project"}>Project</Link>
                   <Link href={"/collections"}>Collection</Link>
+                  <Link href={"/bot"}>Assistant</Link>
                 </div>
               </div>
               <div className="space-y-4">
