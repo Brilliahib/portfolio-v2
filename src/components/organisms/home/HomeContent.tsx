@@ -3,6 +3,7 @@ import HomeAwards from "./HomeAwards";
 import HomeExperience from "./HomeExperience";
 import HomeJumbotron from "./HomeJumbotron";
 import HomeProject from "./HomeProject";
+import HomeWriting from "./HomeWriting";
 
 export default function HomeContent() {
   return (
@@ -14,6 +15,7 @@ export default function HomeContent() {
           <HomeExperience />
           <HomeAwards />
           <HomeProject />
+          <HomeWriting />
         </div>
       </section>
     </>

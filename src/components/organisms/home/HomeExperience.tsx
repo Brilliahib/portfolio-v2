@@ -1,10 +1,4 @@
 import Typography from "@/components/atoms/typography/Typography";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { experiences } from "@/data/data";
 import Image from "next/image";
 
@@ -38,7 +32,7 @@ export default function HomeExperience() {
                     </p>
                   </div>
                 </div>
-                <div className="hidden flex-col items-end gap-1 md:flex">
+                <div className="flex flex-col items-end gap-1">
                   <p className="text-xs font-medium italic text-muted-foreground">
                     {experience.type}
                   </p>
