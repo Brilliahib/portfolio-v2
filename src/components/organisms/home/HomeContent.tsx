@@ -9,7 +9,7 @@ export default function HomeContent() {
   return (
     <>
       <section>
-        <div className="w-full max-w-md">
+        <div className="w-full">
           <HomeJumbotron />
           <HomeAbout />
           <HomeExperience />
