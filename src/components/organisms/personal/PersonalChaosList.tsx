@@ -14,23 +14,23 @@ const chaosList = [
     done: true,
   },
   {
+    title: "Build My Own Startup",
+    description: "from small ideas to something that can change lives.",
+    done: false,
+  },
+  {
     title: "Build an impactful app for society",
     description: "something that changes habits for the better.",
     done: false,
   },
-  {
-    title: "Get a VPS with self-earned money",
-    description: "time to deploy real projects.",
-    done: false,
-  },
+
   {
     title: "Upgrade to a MacBook",
     description: "still saving up for it.",
     done: false,
   },
-
   {
-    title: "Win a hackathon",
+    title: "Win a hackathon (?)",
     description: "still on the my chaos list hehehe.",
     done: false,
   },
