@@ -8,7 +8,7 @@ export default function Footer() {
         className="flex w-full px-5 md:justify-center md:px-0"
         id="footer"
       >
-        <div className="space-y-12 py-12 pb-24 md:max-w-xl md:py-28">
+        <div className="space-y-12 py-12 pb-24 md:max-w-2xl md:py-28">
           <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-8 md:gap-y-12">
             <div className="space-y-4">
               <div className="flex gap-4">
@@ -31,7 +31,7 @@ export default function Footer() {
                   <Link href={"https://blog.brilliahib.tech"} target="_blank">
                     Blog
                   </Link>
-                  <Link href={"/project"}>Project</Link>
+                  <Link href={"/personal"}>Personal</Link>
                   <Link href={"/collections"}>Collection</Link>
                   <Link href={"/bot"}>Assistant</Link>
                 </div>
